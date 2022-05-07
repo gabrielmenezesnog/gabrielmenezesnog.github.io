@@ -12,7 +12,8 @@ html {
   scroll-behavior: smooth;
 }
 
-main, section {
+main,
+section {
   position: relative;
   z-index: 0;
 }
@@ -108,4 +109,16 @@ body {
   text-transform: uppercase;
   transition: 0.1s;
   text-align: center;
+}
+
+@media (max-width: 360px) {
+  .main-button {
+    padding: 10px 20px;
+    font: 0.75rem/1.125rem "Poppins", sans-serif;
+  }
+
+  .secondary-button {
+    padding: 10px 20px;
+    font: 700 0.75rem/1.125rem "Poppins", sans-serif;
+  }
 }
