@@ -1,0 +1,132 @@
+header {
+  position: fixed;
+  z-index: 1;
+}
+
+.header-bg {
+  height: 80px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.header-menu li {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  transition: 0.1s;
+}
+
+.header-menu li:hover {
+  background: #ffbb00;
+  color: #332200;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+.header-menu a:first-child,
+.header-menu a:last-child {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .header-menu a:first-child,
+  .header-menu a:last-child {
+    display: block;
+  }
+
+  .logo {
+    box-sizing: border-box;
+    padding: 8px;
+  }
+
+  #mobile-menu {
+    display: block;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    overflow-x: hidden;
+    background: var(--grey-2e);
+    width: 0vw;
+    height: calc(100vh - 2vh);
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    transition: 0.1s;
+  }
+
+  #nav.active #menu {
+    visibility: visible;
+    width: 35vw;
+    z-index: 100;
+    overflow-y: auto;
+  }
+
+  .header-menu a li {
+    padding: 1rem;
+    margin-bottom: 16px;
+    text-align: center;
+    color: var(white);
+    border-bottom: 1px solid var(--grey-40);
+    overflow-x: hidden;
+  }
+
+  #mobile-menu {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    display: block;
+    color: var(--yellow);
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 4px;
+    background: currentColor;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -6px;
+    margin-bottom: 1px;
+  }
+}
