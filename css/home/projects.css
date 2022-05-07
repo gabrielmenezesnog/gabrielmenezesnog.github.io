@@ -49,7 +49,7 @@ p {
   background: #ccc;
 }
 
-.project-links {
+.project-links{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
