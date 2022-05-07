@@ -87,6 +87,7 @@ body {
   color: var(--black-00);
   text-transform: uppercase;
   transition: 0.1s;
+  text-align: center;
 }
 
 .main-button:hover {
@@ -106,4 +107,5 @@ body {
   color: var(--yellow);
   text-transform: uppercase;
   transition: 0.1s;
+  text-align: center;
 }

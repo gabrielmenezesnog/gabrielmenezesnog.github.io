@@ -53,3 +53,13 @@
   font: 0.75rem/1.125rem "Roboto", sans-serif;
   /* Equivalent to 12/18px*/
 }
+
+@media (max-width: 600px) {
+  .introduction h1 {
+    font: 600 2.25rem/3.375rem "Poppins", sans-serif;
+  }
+
+  .introduction h2{
+    font: 1rem/1.5rem "Poppins", sans-serif;
+  }
+}
