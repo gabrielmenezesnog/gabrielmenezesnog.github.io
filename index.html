@@ -8,7 +8,7 @@
     <title>Gabriel de Menezes - Portfolio</title>
 
     <meta name="description" content="Gabriel de Menezes Nogueira's online portfolio - front end web developer and UX/UI Design">
-    <link rel=" preload" href="/css/style.min.css" as="style">
+    <link rel=" preload" href="/css/style.css" as="style">
     <link rel="stylesheet" href="/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,28 +64,28 @@
     <main class="black-bg">
         <div class="container introduction">
             <div class="retangle">
-                <h3 class="s-text grey-71 bold2">welcome to my portfolio</h3>
+                <h3 class="s-text grey-71 bold2 fadeInLeft" data-anime="600">welcome to my portfolio</h3>
             </div>
-            <h1 class="bold">I'm Gabriel de Menezes</h1>
-            <h2 class="m-title bold">Web Developer - UX/UI Designer</h2>
-            <h3 class="s-text grey-71 bold2">Colombo, Paraná - Brazil</h3>
-            <div class="buttons">
+            <h1 class="bold fadeInLeft" data-anime="1400">I'm Gabriel de Menezes</h1>
+            <h2 class="m-title bold fadeInLeft" data-anime="1400">Web Developer - UX/UI Designer</h2>
+            <h3 class="s-text grey-71 bold2 fadeInLeft" data-anime="1400">Colombo, Paraná - Brazil</h3>
+            <div class="buttons fadeInLeft" data-anime="2100">
                 <a href="https://t.me/freelancergabriel" class="main-button">let's talk</a>
-                <a href="" class="secondary-button">my resume</a>
+                <a href="/resources/resume.pdf" class="secondary-button">my resume</a>
             </div>
         </div>
 
         <div class="container skills">
             <ul class="skillbox">
-                <li class="minor-retangle tools">
+                <li class="minor-retangle tools fadeInUp" data-anime="2800">
                     <h3 class="s-title bold">tools</h3>
                     <p class="s-text medium grey-71">I learned <span class="bold white">UX/UI Design</span> with <span class="yellow bold">Figma</span> , versioning with <span class="yellow bold">Git</span>/ <span class="yellow bold">Github</span> (via Linux) and code editing with VS Code.</p>
                 </li>
-                <li class="minor-retangle backend">
+                <li class="minor-retangle backend fadeInUp" data-anime="2900">
                     <h3 class="s-title bold">back-end</h3>
                     <p class="s-text medium grey-71">My first contact with programming was with the <span class="yellow bold">Java</span> language. I also have knowledge with <span class="yellow bold">json</span> (API's) and <span class="yellow bold">node.js</span>.</p>
                 </li>
-                <li class="frontend">
+                <li class="frontend fadeInUp" data-anime="3000">
                     <h3 class="s-title bold">front-end</h3>
                     <p class="s-text medium dark-yellow-text">My area of expertise. This is where most of my efforts are concentrated: <span class="dark-yellow bold">HTML</span>, <span class="dark-yellow bold">CSS</span> and <span class="dark-yellow bold">JavaScript</span>.</p>
                 </li>
@@ -246,13 +246,13 @@
 
     <section class="fixed-contact" aria-label="Contact">
         <div class="contact">
-            <ul class="grey-40">
-                <li><a href="https://t.me/freelancergabriel">
+            <ul class="grey-40 fadeInLeft" data-anime="3000">
+                <li class="fadeInLeft" data-anime="3200"><a href="https://t.me/freelancergabriel">
                         <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0Zm-9.641-2.617c-.973.404-2.918 1.242-5.833 2.512-.472.188-.721.373-.743.553-.038.303.343.423.862.587l.219.069c.51.166 1.197.36 1.554.367.324.008.686-.125 1.085-.4 2.723-1.838 4.13-2.767 4.217-2.787.063-.015.15-.033.207.02.06.051.053.15.047.176-.038.161-1.534 1.551-2.308 2.271-.241.225-.412.384-.447.42-.077.079-.156.157-.235.233-.475.457-.83.8.018 1.36.41.27.737.491 1.063.713.355.243.71.484 1.17.787.116.075.229.156.338.234.413.295.787.56 1.246.517.267-.025.543-.275.683-1.025.332-1.771.983-5.607 1.133-7.189.01-.131.004-.263-.016-.394a.421.421 0 0 0-.143-.27.658.658 0 0 0-.387-.117c-.375.006-.954.208-3.73 1.363Z" fill="var(--side-icon-color)" />
                         </svg>
                     </a></li>
-                <li><a href="">
+                <li class="fadeInLeft" data-anime="3300"><a href="">
                         <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#a)">
                                 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.899 7.899 0 0 0 13.6 2.326h.001ZM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592Zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232Z" fill="#404040" />
@@ -264,22 +264,22 @@
                             </defs>
                         </svg>
                     </a></li>
-                <li><a href="mailto:gabriel.gmnogueira@gmail.com">
+                <li class="fadeInLeft" data-anime="3400"><a href="mailto:gabriel.gmnogueira@gmail.com">
                         <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757v.001Zm3.436-.586L16 11.801V4.697l-5.803 3.546v.001Z" fill="#404040" />
                         </svg>
                     </a></li>
-                <li><a href="https://www.linkedin.com/in/gabrielmenezesnogueira/">
+                <li class="fadeInLeft" data-anime="3500"><a href="https://www.linkedin.com/in/gabrielmenezesnogueira/">
                         <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146Zm4.943 12.248V6.169H2.542v7.225h2.401Zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016Zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4Z" fill="#404040" />
                         </svg>
                     </a></li>
-                <li><a href="https://github.com/gabrielmenezesnog">
+                <li class="fadeInLeft" data-anime="3600"><a href="https://github.com/gabrielmenezesnog">
                         <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8Z" fill="#404040" />
                         </svg>
                     </a></li>
-                <li><a href="https://www.behance.net/gabrielmenezesn">
+                <li class="fadeInLeft" data-anime="3700"><a href="https://www.behance.net/gabrielmenezesn">
                         <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278-.18.358-.449.664-.782.887-.32.215-.711.39-1.137.496a5.33 5.33 0 0 1-1.278.176L0 12.803V3h4.654Zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.199-.005 2.199-.005Zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305l-.001.005Zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.136 4.136 0 0 1-1.527-.285 2.826 2.826 0 0 1-1.137-.782 2.85 2.85 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782.475-.19.982-.286 1.493-.285.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396Zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.249-.882-.496-1.132Zm-3.127-3.728h3.978v.957h-3.978v-.957Z" fill="#404040" />
                         </svg>
@@ -336,6 +336,8 @@
         </div>
     </footer>
     <script src="/js/menu-mobile.js"></script>
+    <script src="/js/plugins/simple-anime.js"></script>
+    <script src="/js/activate.js"></script>
 </body>
 
 </html>

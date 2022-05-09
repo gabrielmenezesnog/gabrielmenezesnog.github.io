@@ -29,7 +29,7 @@
 .buttons {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 20px;
 }
 
 @media (max-width: 360px) {

@@ -6,7 +6,7 @@ header {
 .header-bg {
   height: 80px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
 }
 
@@ -59,33 +59,41 @@ header {
   }
 
   #menu {
-    display: block;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
     position: absolute;
     visibility: hidden;
     overflow-x: hidden;
-    background: var(--grey-2e);
-    width: 0vw;
-    height: calc(100vh - 2vh);
-    top: 0px;
-    left: 0px;
-    padding: 20px;
-    transition: 0.1s;
+    overflow-y: hidden;
+    width: 100vw;
+    height: 0vh;
+    top: 79px;
+    right: 0px;
+    padding-top: 30%;
+    transition: 0.3s;
   }
 
   #nav.active #menu {
     visibility: visible;
-    width: 35vw;
-    z-index: 100;
+    height: calc(100vh - 79px);
+    overflow-x: auto;
     overflow-y: auto;
   }
 
   .header-menu a li {
     padding: 1rem;
-    margin-bottom: 16px;
+    width: 240px;
     text-align: center;
-    color: var(white);
-    border-bottom: 1px solid var(--grey-40);
-    overflow-x: hidden;
+    color: var(--white);
+    border: 1px solid var(--yellow);
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .header-menu a li:hover {
+    background: var(--yellow);
   }
 
   #mobile-menu {
