@@ -1,4 +1,7 @@
-if (window.navigator.language === "pt") {
+if (
+  window.navigator.language === "pt" ||
+  window.navigator.language === "pt-br"
+) {
   // html lang
   const lang = document.querySelector('html[lang="en"]');
   lang.setAttribute("lang", "pt-br");
