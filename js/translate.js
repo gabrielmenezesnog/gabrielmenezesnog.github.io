@@ -10,26 +10,34 @@ if (
   const title = document.querySelector("title");
   title.innerText = "Gabriel de Menezes - Portfólio";
 
+  // HTML meta content
+  const content = document.querySelector('meta[name="description"]');
+  content.removeAttribute("content");
+  content.setAttribute(
+    `content`,
+    `Portfólio de Gabriel Menezes - desenvolvedor front end e UX/UI Design`
+  );
+
   // Header nav
   const nav = document.querySelectorAll("li");
   nav.forEach((item) => {
-    if (item.innerText === "top") {
-      item.innerText = "topo da página";
+    if (item.outerHTML === `<li>top</li>`) {
+      item.outerHTML = `<li>topo da página</li>`;
     }
-    if (item.innerText === "about me") {
-      item.innerText = "Sobre mim";
+    if (item.outerHTML === `<li>about me</li>`) {
+      item.outerHTML = `<li>sobre mim</li>`;
     }
-    if (item.innerText === "experience") {
-      item.innerText = "experiência";
+    if (item.outerHTML === `<li>experience</li>`) {
+      item.outerHTML = `<li>experiência</li>`;
     }
-    if (item.innerText === "projects") {
-      item.innerText = "projetos";
+    if (item.outerHTML === `<li>projects</li>`) {
+      item.outerHTML = `<li>projetos</li>`;
     }
-    if (item.innerText === "academic") {
-      item.innerText = "formação";
+    if (item.outerHTML === `<li>academic</li>`) {
+      item.outerHTML = `<li>formação</li>`;
     }
-    if (item.innerText === "contact") {
-      item.innerText = "contato";
+    if (item.outerHTML === `<li>contact</li>`) {
+      item.outerHTML = `<li>contato</li>`;
     }
   });
 
