@@ -36,6 +36,7 @@ header {
 
 #mobile-menu {
   display: none;
+  overflow: hidden;
 }
 
 .header-menu a:first-child,
@@ -66,8 +67,7 @@ header {
     place-items: center;
     position: absolute;
     visibility: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
     width: 100vw;
     height: 0vh;
     top: 80px;
@@ -79,8 +79,7 @@ header {
   #nav.active #menu {
     visibility: visible;
     height: calc(100vh - 80px);
-    overflow-x: auto;
-    overflow-y: auto;
+    overflow: hidden;
   }
 
   .header-menu a li {
@@ -103,6 +102,7 @@ header {
     padding: 0.5rem 1rem;
     cursor: pointer;
     gap: 0.5rem;
+    overflow: hidden;
   }
 
   #hamburger {
