@@ -1,0 +1,58 @@
+:root {
+  --white: #fff;
+  --black-00: #000;
+  --black-11: #111;
+  --grey-40: #404040;
+  --grey-71: #717171;
+  --grey-2e: #2e2e2e;
+  --grey-cc: #ccc;
+  --grey-9c: #9c9c9c;
+  --side-icon-color: #404040;
+  --yellow: #ffbb00;
+  --dark-yellow: #332200;
+  --dark-yellow-text: #976f00;
+}
+.white {
+  color: var(--white);
+}
+
+.grey-40 {
+  color: var(--grey-40);
+}
+
+.grey-71 {
+  color: var(--grey-71);
+}
+
+.grey-2e {
+  color: var(--grey-2e);
+}
+
+.grey-cc {
+  color: var(--grey-cc);
+}
+
+.grey-9c {
+  color: var(--grey-9c);
+}
+
+.black-11 {
+  color: var(--black-11);
+}
+
+.black-00 {
+  color: var(--black-00);
+}
+
+
+.yellow {
+  color: var(--yellow);
+}
+
+.dark-yellow {
+  color: var(--dark-yellow);
+}
+
+.dark-yellow-text {
+  color: var(--dark-yellow-text);
+}

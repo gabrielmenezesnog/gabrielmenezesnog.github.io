@@ -1,0 +1,79 @@
+.bold {
+  font-weight: 600 !important;
+}
+
+.bold2 {
+  font-weight: 500 !important;
+}
+
+.medium {
+  font-weight: 500 !important;
+}
+
+.introduction h1 {
+  font: 600 4rem/6rem "Poppins", sans-serif;
+}
+
+.l-title {
+  font: 2rem/3rem "Poppins", sans-serif;
+  /* Equivalent to 32/48px*/
+}
+
+.m-title {
+  font: 1.5rem/2.25rem "Poppins", sans-serif;
+  /* Equivalent to 24/36px*/
+}
+
+.s-title {
+  font: 1.25rem/1.875rem "Poppins", sans-serif;
+  /* Equivalent to 20/30px*/
+}
+
+.xs-title {
+  font: 1rem/1.5rem "Poppins", sans-serif;
+  /* Equivalent to 16/24px*/
+}
+
+.l-text {
+  font: 1.5rem/2.25rem "Roboto", sans-serif;
+  /* Equivalent to 24/36px*/
+}
+
+.m-text {
+  font: 1.25rem/1.875rem "Roboto", sans-serif;
+  /* Equivalent to 20/30px*/
+}
+
+.s-text {
+  font: 1rem/1.5rem "Roboto", sans-serif;
+  /* Equivalent to 16/24px*/
+}
+
+.xs-text {
+  font: 0.75rem/1.125rem "Roboto", sans-serif;
+  /* Equivalent to 12/18px*/
+}
+
+@media (max-width: 600px) {
+  .introduction h1 {
+    font: 600 3rem/4.5rem "Poppins", sans-serif;
+  }
+
+  .introduction h2 {
+    font: 1rem/1.5rem "Poppins", sans-serif;
+  }
+}
+
+@media (max-width: 360px) {
+  .introduction h1 {
+    font: 600 2rem/3rem "Poppins", sans-serif;
+  }
+
+  .introduction h3 {
+    font: 0.75rem/1.125rem "Roboto", sans-serif;
+  }
+
+  .introduction h2 {
+    font: 1rem/1.5rem "Poppins", sans-serif;
+  }
+}

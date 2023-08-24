@@ -1,0 +1,39 @@
+.introduction {
+  margin-top: 120px;
+}
+
+.introduction h3:first-child {
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.introduction h2 + h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.introduction h2 + h3::before {
+  content: url(/resources/svg/location.svg);
+}
+
+.introduction h1 {
+  margin-bottom: 4px;
+}
+
+.introduction h2 {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 360px) {
+  .buttons {
+    gap: 16px;
+  }
+}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel de Menezes - Portfolio</title>
+
+    <meta name="description" content="Gabriel de Menezes Nogueira's online portfolio - front end web developer and UX/UI Design">
+    <link rel=" preload" href="/css/style.css" as="style">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/resources/svg/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header-bg">
+        <div class="container header">
+            <div class="logo">
+                <svg width="77" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M76.096 23h-5.152l-.384-8.672c-.107-2.07-.16-3.915-.16-5.536 0-1.237.032-2.41.096-3.52l-3.424 15.392h-4.96L58.464 5.272c.128 1.856.192 3.605.192 5.248 0 1.237-.032 2.528-.096 3.872L58.176 23h-5.12L54.72.824h6.624l3.328 15.04L67.776.824h6.656L76.096 23Z" fill="#fff" />
+                    <path d="M40.876.102a.75.75 0 0 1 .34.87l-2.7 8.778H43.5a.75.75 0 0 1 .546 1.264l-12 12.75a.75.75 0 0 1-1.263-.735l2.701-8.779H28.5a.75.75 0 0 1-.546-1.264l12-12.75A.75.75 0 0 1 40.876.1v.001ZM30.236 12.75H34.5a.75.75 0 0 1 .717.97l-2.052 6.665 8.598-9.135H37.5a.75.75 0 0 1-.717-.97l2.052-6.665-8.6 9.135Z" fill="#FB0" />
+                    <path d="M10.68.28c2.859 0 5.323.907 7.392 2.72l-2.656 2.784c-.79-.597-1.525-1.024-2.208-1.28-.661-.277-1.43-.416-2.304-.416-1.643 0-2.955.65-3.936 1.952-.981 1.28-1.472 3.232-1.472 5.856 0 2.837.373 4.853 1.12 6.048.747 1.173 1.91 1.76 3.488 1.76 1.11 0 2.112-.245 3.008-.736v-5.024h-2.88l-.512-3.712h8.48v10.976a14.365 14.365 0 0 1-3.808 1.728 14.765 14.765 0 0 1-4.16.608c-3.37 0-5.91-.981-7.616-2.944-1.707-1.984-2.56-4.885-2.56-8.704 0-2.432.459-4.523 1.376-6.272.939-1.75 2.208-3.072 3.808-3.968C6.86.739 8.675.28 10.68.28Z" fill="#fff" />
+                </svg>
+            </div>
+
+            <nav class="smoothScroll" id="nav" aria-label="Navigation">
+                <div class="float-menu">
+                    <button id="mobile-menu">
+                        <span id="hamburger"></span>
+                    </button>
+                    <ul class="header-menu xs-title" id="menu">
+                        <a href="#top">
+                            <li>top</li>
+                        </a>
+                        <a href="#about">
+                            <li>about me</li>
+                        </a>
+                        <a href="#experience">
+                            <li>experience</li>
+                        </a>
+                        <a href="#projects">
+                            <li>projects</li>
+                        </a>
+                        <a href="#academic">
+                            <li>academic</li>
+                        </a>
+                        <a href="#contact">
+                            <li>contact</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="black-bg">
+        <div class="container introduction">
+            <div class="retangle">
+                <h3 class="s-text grey-71 bold2 fadeInLeft" data-anime="600">welcome to my portfolio</h3>
+            </div>
+            <h1 class="bold fadeInLeft" data-anime="1400">I'm Gabriel de Menezes</h1>
+            <h2 class="m-title bold fadeInLeft" data-anime="1400">Front-End Developer / Java</h2>
+            <h3 class="s-text grey-71 bold2 fadeInLeft" data-anime="1400">Colombo, Paraná - Brazil</h3>
+            <div class="buttons fadeInLeft" data-anime="2100">
+                <a href="mailto:gabriel.gmnogueira@gmail.com" class="main-button">let's talk</a>
+                <a href="/resources/resume.pdf" class="secondary-button">my resume</a>
+            </div>
+        </div>
+
+        <div class="container skills">
+            <ul class="skillbox">
+                <li class="minor-retangle tools fadeInUp" data-anime="2800">
+                    <h3 class="s-title bold">tools</h3>
+                    <p class="s-text medium grey-71"><span class="bold grey-71"><span class="yellow bold">Jira / Kanban</span>, <span>React DevTools</span>, <span class="yellow bold">Flipper</span>, <span class="yellow bold">Figma</span> , <span>Git</span>/ <span>Github</span> , <span class="yellow bold">DBeaver</span> and <span>VSCode</span>.</span></p>
+                </li>
+                <li class="minor-retangle backend fadeInUp" data-anime="2900">
+                    <h3 class="s-title bold" translate="no">back-end</h3>
+                    <p class="s-text medium grey-71">Java - <span class="yellow bold">Spring Boot</span>, <span class="yellow bold">SQL</span>.</p>
+                </li>
+                <li class="frontend fadeInUp" data-anime="3000">
+                    <h3 class="s-title bold" translate="no">front-end</h3>
+                    <p class="s-text medium dark-yellow-text"><span class="dark-yellow bold">React-Native</span>, <span class="dark-yellow bold">React-JS</span>, and <span class="dark-yellow bold">Vue-JS</span>.</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <section class="container about js-scroll" id="about" aria-label="About">
+        <picture>
+            <source media="(max-width:395px)" srcset="/resources/img/perfil.png">
+            <img src="/resources/img/perfil.png" alt="profile picture">
+        </picture>
+        <div class="about-text minor-retangle">
+            <h1 class="m-title bold black-11">A little about myself</h1>
+            <p class="s-text medium grey-71">My name is Gabriel de Menezes Nogueira, I'm 22 years old and I'm in the 2nd period of the Systems Analysis and Development course at IFPR (Federal Institute of Paraná). I've been studying programming since I was 17, either on my own or at college. Today, my focus is to develop with love, always based on the instructions of the most experienced and in an agile and efficient way!</p>
+        </div>
+    </section>
+
+    <section class="container experience js-scroll" id="experience" aria-label="Experience">
+        <div class="minor-retangle">
+            <h1 class="m-title bold black-11">Where i worked</h1>
+        </div>
+        <div class="experience-list">
+            <div class="experience-box">
+                <h3 class="s-title bold">UniAstus</h3>
+                <p class="s-text grey-71">I worked in the <span class="yellow bold">home office</span> modality with a team of 5 people developing the UniAstus application. My work was all focused on <span class="yellow bold">React-native</span>: I created the application design using <span class="yellow bold">Figma</span>, I did all the screens, navigations, interactions, <span class="yellow bold">redux and sagas</span>. Here I also learned concepts of agile methodologies, using <span class="yellow bold">Jira and Kanban</span>.</p>
+                <ul class="i-worked-with s-text grey-cc">
+                    <li>React-Native</li>
+                    <li>Javascript / Typescript</li>
+                    <li>Redux / Saga</li>
+                    <li>Figma</li>
+                    <li>Jira / Kanban</li>
+                </ul>
+            </div>
+            <div class="experience-box">
+                <h3 class="s-title bold">Next job</h3>
+                <p class="s-text grey-71">When I get a next job, I'll post it here.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container projects js-scroll" id="projects" aria-label="Projects">
+        <div class="minor-retangle">
+            <h1 class="m-title bold black-11">Things i created</h1>
+        </div>
+        <div class="projects-list">
+            <div class="project">
+                <a href="https://bikcraft-rosy.vercel.app/">
+                    <picture>
+                        <source media="(max-width:560px)" srcset="/resources/img/bikcraft-project.jpg">
+                        <img src="/resources/img/bikcraft-project.jpg" alt="Bikcraft project">
+                    </picture>
+                    <div class="project-info">
+                        <h3 class="s-title bold black-11">Bikcraft<span class="s-text grey-9c">2022</span></h3>
+                        <p class="s-text medium grey-71">Created during Origamid's HTML and CSS course, it simulates an online shop for on-demand bicycles.</p>
+                        <ul class="technologies xs-text grey-71">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>UX/UI Design</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/gabrielmenezesnog/bikcraft">
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 0C4.475 0 0 4.475 0 10a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.287-.6-1.175-1.025-1.412-.35-.188-.85-.65-.013-.663.788-.013 1.35.725 1.538 1.025.9 1.512 2.337 1.087 2.912.825.088-.65.35-1.088.638-1.338-2.225-.25-4.55-1.112-4.55-4.937 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.274.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.015 10.015 0 0 0 20 10c0-5.525-4.475-10-10-10Z" fill="#595959" />
+                                </svg>
+                            </a>
+                            <a href="https://bikcraft-rosy.vercel.app/">
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="#595959">
+                                        <path d="M10.795 4.375a.625.625 0 0 0-.625-.625H1.875A1.875 1.875 0 0 0 0 5.625v12.5A1.875 1.875 0 0 0 1.875 20h12.5a1.875 1.875 0 0 0 1.875-1.875V9.83a.625.625 0 1 0-1.25 0v8.295a.624.624 0 0 1-.625.625h-12.5a.625.625 0 0 1-.625-.625v-12.5A.625.625 0 0 1 1.875 5h8.295a.625.625 0 0 0 .625-.625Z" />
+                                        <path d="M20 .625A.625.625 0 0 0 19.375 0h-6.25a.625.625 0 1 0 0 1.25h4.741L7.683 11.432a.626.626 0 1 0 .885.886L18.75 2.134v4.741a.625.625 0 1 0 1.25 0V.625Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="a">
+                                            <path fill="#fff" d="M0 0h20v20H0z" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://guiadecursos.vercel.app/">
+                    <picture>
+                        <source media="(max-width:560px)" srcset="/resources/img/guia-project.jpg">
+                        <img src="/resources/img/guia-project.jpg" alt="Bikcraft project">
+                    </picture>
+                    <div class="project-info">
+                        <h3 class="s-title bold black-11">Guia de Cursos<span class="s-text grey-9c">2022</span></h3>
+                        <p class="s-text medium grey-71">Site where you can find descriptions about various types of courses, as well as reports from people in the area in question.</p>
+                        <ul class="technologies xs-text grey-71">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>UX/UI Design</li>
+                        </ul>
+                        <div class=" project-links">
+                            <a href="https://github.com/gabrielmenezesnog/guiadecursos">
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 0C4.475 0 0 4.475 0 10a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.287-.6-1.175-1.025-1.412-.35-.188-.85-.65-.013-.663.788-.013 1.35.725 1.538 1.025.9 1.512 2.337 1.087 2.912.825.088-.65.35-1.088.638-1.338-2.225-.25-4.55-1.112-4.55-4.937 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.274.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.015 10.015 0 0 0 20 10c0-5.525-4.475-10-10-10Z" fill="#595959" />
+                                </svg>
+                            </a>
+                            <a href="https://guiadecursos.vercel.app/">
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="#595959">
+                                        <path d="M10.795 4.375a.625.625 0 0 0-.625-.625H1.875A1.875 1.875 0 0 0 0 5.625v12.5A1.875 1.875 0 0 0 1.875 20h12.5a1.875 1.875 0 0 0 1.875-1.875V9.83a.625.625 0 1 0-1.25 0v8.295a.624.624 0 0 1-.625.625h-12.5a.625.625 0 0 1-.625-.625v-12.5A.625.625 0 0 1 1.875 5h8.295a.625.625 0 0 0 .625-.625Z" />
+                                        <path d="M20 .625A.625.625 0 0 0 19.375 0h-6.25a.625.625 0 1 0 0 1.25h4.741L7.683 11.432a.626.626 0 1 0 .885.886L18.75 2.134v4.741a.625.625 0 1 0 1.25 0V.625Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="a">
+                                            <path fill="#fff" d="M0 0h20v20H0z" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://gabrielmenezesnog.github.io/animaisfantasticos/">
+                    <picture>
+                        <source media="(max-width:560px)" srcset="/resources/img/animais-project.jpg">
+                        <img src="/resources/img/animais-project.jpg" alt="Bikcraft project">
+                    </picture>
+                    <div class="project-info">
+                        <h3 class="s-title bold black-11">Animais Fantásticos<span class="s-text grey-9c">2022</span></h3>
+                        <p class="s-text medium grey-71">Project created to train JavaScript. Simulates an informative and protectionist website for some animal species.</p>
+                        <ul class="technologies xs-text grey-71">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>UX/UI Design</li>
+                        </ul>
+                        <div class=" project-links">
+                            <a href="https://gabrielmenezesnog.github.io/animaisfantasticos/">
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 0C4.475 0 0 4.475 0 10a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.287-.6-1.175-1.025-1.412-.35-.188-.85-.65-.013-.663.788-.013 1.35.725 1.538 1.025.9 1.512 2.337 1.087 2.912.825.088-.65.35-1.088.638-1.338-2.225-.25-4.55-1.112-4.55-4.937 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.274.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.015 10.015 0 0 0 20 10c0-5.525-4.475-10-10-10Z" fill="#595959" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/gabrielmenezesnog/animaisfantasticos">
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="#595959">
+                                        <path d="M10.795 4.375a.625.625 0 0 0-.625-.625H1.875A1.875 1.875 0 0 0 0 5.625v12.5A1.875 1.875 0 0 0 1.875 20h12.5a1.875 1.875 0 0 0 1.875-1.875V9.83a.625.625 0 1 0-1.25 0v8.295a.624.624 0 0 1-.625.625h-12.5a.625.625 0 0 1-.625-.625v-12.5A.625.625 0 0 1 1.875 5h8.295a.625.625 0 0 0 .625-.625Z" />
+                                        <path d="M20 .625A.625.625 0 0 0 19.375 0h-6.25a.625.625 0 1 0 0 1.25h4.741L7.683 11.432a.626.626 0 1 0 .885.886L18.75 2.134v4.741a.625.625 0 1 0 1.25 0V.625Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="a">
+                                            <path fill="#fff" d="M0 0h20v20H0z" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://gabrielmenezesnog.github.io/kinderen/">
+                    <picture>
+                        <source media="(max-width:560px)" srcset="/resources/img/kinderen-project.jpg">
+                        <img src="/resources/img/kinderen-project.jpg" alt="Bikcraft project">
+                    </picture>
+                    <div class="project-info">
+                        <h3 class="s-title bold black-11">Kinderen<span class="s-text grey-9c">2022</span></h3>
+                        <p class="s-text medium grey-71">Personalized landing page for a client's sewing and clothing business.</p>
+                        <ul class="technologies xs-text grey-71">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>UX/UI Design</li>
+                        </ul>
+                        <div class=" project-links">
+                            <a href="https://github.com/gabrielmenezesnog/kinderen">
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 0C4.475 0 0 4.475 0 10a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.287-.6-1.175-1.025-1.412-.35-.188-.85-.65-.013-.663.788-.013 1.35.725 1.538 1.025.9 1.512 2.337 1.087 2.912.825.088-.65.35-1.088.638-1.338-2.225-.25-4.55-1.112-4.55-4.937 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.274.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.015 10.015 0 0 0 20 10c0-5.525-4.475-10-10-10Z" fill="#595959" />
+                                </svg>
+                            </a>
+                            <a href="https://gabrielmenezesnog.github.io/kinderen/">
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="#595959">
+                                        <path d="M10.795 4.375a.625.625 0 0 0-.625-.625H1.875A1.875 1.875 0 0 0 0 5.625v12.5A1.875 1.875 0 0 0 1.875 20h12.5a1.875 1.875 0 0 0 1.875-1.875V9.83a.625.625 0 1 0-1.25 0v8.295a.624.624 0 0 1-.625.625h-12.5a.625.625 0 0 1-.625-.625v-12.5A.625.625 0 0 1 1.875 5h8.295a.625.625 0 0 0 .625-.625Z" />
+                                        <path d="M20 .625A.625.625 0 0 0 19.375 0h-6.25a.625.625 0 1 0 0 1.25h4.741L7.683 11.432a.626.626 0 1 0 .885.886L18.75 2.134v4.741a.625.625 0 1 0 1.25 0V.625Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="a">
+                                            <path fill="#fff" d="M0 0h20v20H0z" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="black-bg-v2" aria-label="academic background" id="academic">
+        <div class="container academic-education js-scroll">
+            <h1 class="black-00">Academic Education</h1>
+            <div>
+                <p class="recentXp m-text medium grey-71">My most recent academic experience was the completion of high school 🎓 integrated into the Technical Computer course. In addition, I am studying higher in <span class="white bold">Technology in Systems Analysis and Development</span>.</p>
+                <div class="formation-box">
+                    <p class="xs-text grey-9c"><span class="yellow">HIGH SCHOOL</span> | 2017 - 2021</p>
+                    <h3 class="xs-title">Computer Technician</h3>
+                    <p class="s-text grey-9c">IFPR - Colombo</p>
+                </div>
+
+                <div class="formation-box">
+                    <p class="xs-text grey-9c"><span class="yellow">COLLEGE</span> | 2023 - present</p>
+                    <h3 class="xs-title">Technology in Systems Analysis and Development</h3>
+                    <p class="s-text grey-9c">IFPR - Colombo</p>
+                </div>
+
+                <div class="certificates">
+                    <div class="courses">
+                        <h3 class="s-text white">Certificates</h3>
+                        <ul class="s-text grey-71">
+                            <li>UX / UI Design <span>34h</span></li>
+                            <li>HTML and CSS<span>46h</span></li>
+                            <li>JavaScript ES6+<span>74h</span></li>
+                            <li>Java - basic <span>40h</span></li>
+                            <li>Java - OOP <span>40h</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="languages">
+                        <h3 class="s-text white">Languages</h3>
+                        <ul class="s-text grey-71">
+                            <li><span class="white ">Portuguese</span>/ native</li>
+                            <li><span class="white ">English</span>/ intermediate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fixed-contact" aria-label="Contact">
+        <div class="contact">
+            <ul class="grey-40 fadeInLeft" data-anime="2800">
+
+                <li class="fadeInLeft" data-anime="3100"><a href="mailto:gabriel.gmnogueira@gmail.com">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757v.001Zm3.436-.586L16 11.801V4.697l-5.803 3.546v.001Z" fill="#404040" />
+                        </svg>
+                    </a></li>
+                <li class="fadeInLeft" data-anime="3200"><a href="https://www.linkedin.com/in/gabrielmenezesnogueira/">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146Zm4.943 12.248V6.169H2.542v7.225h2.401Zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016Zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4Z" fill="#404040" />
+                        </svg>
+                    </a></li>
+                <li class="fadeInLeft" data-anime="3300"><a href="https://github.com/gabrielmenezesnog">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8Z" fill="#404040" />
+                        </svg>
+                    </a></li>
+                <li class="fadeInLeft" data-anime="3400"><a href="https://www.behance.net/gabrielmenezesn">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278-.18.358-.449.664-.782.887-.32.215-.711.39-1.137.496a5.33 5.33 0 0 1-1.278.176L0 12.803V3h4.654Zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.199-.005 2.199-.005Zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305l-.001.005Zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.136 4.136 0 0 1-1.527-.285 2.826 2.826 0 0 1-1.137-.782 2.85 2.85 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782.475-.19.982-.286 1.493-.285.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396Zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.249-.882-.496-1.132Zm-3.127-3.728h3.978v.957h-3.978v-.957Z" fill="#404040" />
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer-bg" id="contact">
+        <div class="container footer">
+            <div class="footer-text m-text medium grey-71">
+                <p>I am <span class="yellow bold">available</span> for new <span class="yellow bold">projects</span> and <span class="yellow bold">hires</span> at the moment. Contact me and we'll set up a conversation 👋</p>
+                <p class="s-text">Design and development by <span class="white">Gabriel de Menezes</span>.</p>
+            </div>
+            <ul class="contact-list">
+
+                <li> <a href="mailto:gabriel.gmnogueira@gmail.com">
+                        <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M.063 4.444A2.5 2.5 0 0 1 2.5 2.5h15a2.5 2.5 0 0 1 2.438 1.944L10 10.518.062 4.444ZM0 5.87v8.88l7.254-4.447L0 5.87Zm8.451 5.166L.24 16.072A2.5 2.5 0 0 0 2.5 17.5h15a2.5 2.5 0 0 0 2.26-1.43l-8.213-5.034-1.547.947-1.549-.947v.002Zm4.295-.732L20 14.751v-8.88l-7.254 4.433v.001Z" fill="#404040" />
+                        </svg></a>
+                </li>
+                <li> <a href="https://www.linkedin.com/in/gabrielmenezesnogueira/">
+                        <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1.433C0 .64.657 0 1.469 0H18.53C19.343 0 20 .641 20 1.433v17.134C20 19.36 19.343 20 18.531 20H1.47C.657 20 0 19.359 0 18.567V1.433Zm6.179 15.31V7.71H3.177v9.031H6.18Zm-1.5-10.265c1.046 0 1.697-.693 1.697-1.56-.019-.887-.65-1.56-1.677-1.56C3.67 3.357 3 4.032 3 4.918c0 .867.651 1.56 1.659 1.56h.02Zm6.135 10.264V11.7c0-.27.02-.54.1-.733.216-.538.71-1.097 1.54-1.097 1.086 0 1.52.827 1.52 2.042v4.832h3.001v-5.18c0-2.776-1.48-4.066-3.455-4.066-1.592 0-2.306.876-2.706 1.492v.031h-.02l.02-.031V7.71h-3c.037.848 0 9.031 0 9.031h3Z" fill="#404040" />
+                        </svg></a>
+                </li>
+                <li> <a href="https://github.com/gabrielmenezesnog">
+                        <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0C4.475 0 0 4.475 0 10a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.287-.6-1.175-1.025-1.412-.35-.188-.85-.65-.013-.663.788-.013 1.35.725 1.538 1.025.9 1.512 2.337 1.087 2.912.825.088-.65.35-1.088.638-1.338-2.225-.25-4.55-1.112-4.55-4.937 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.274.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.015 10.015 0 0 0 20 10c0-5.525-4.475-10-10-10Z" fill="#404040" />
+                        </svg></a>
+                </li>
+                <li> <a href="https://www.behance.net/gabrielmenezesn">
+                        <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.817 3.75c.577 0 1.11.044 1.598.175.487.088.889.27 1.245.489.357.22.621.532.801.934.175.4.27.888.27 1.42 0 .62-.132 1.153-.445 1.553-.268.4-.707.758-1.246 1.021.758.22 1.334.62 1.685 1.153s.576 1.196.576 1.954c0 .62-.131 1.152-.356 1.597-.224.448-.561.83-.978 1.109-.4.269-.888.488-1.42.62a6.66 6.66 0 0 1-1.598.22L0 16.004V3.75h5.817Zm-.356 4.973c.488 0 .888-.132 1.196-.357.308-.225.444-.621.444-1.108 0-.27-.043-.533-.131-.71a1.226 1.226 0 0 0-.4-.443 2.3 2.3 0 0 0-.576-.22c-.22-.044-.445-.044-.709-.044H2.712V8.73c0-.006 2.75-.006 2.75-.006Zm.131 5.24c.27 0 .533-.043.758-.087.22-.043.445-.132.62-.27a1.7 1.7 0 0 0 .445-.487c.088-.22.175-.489.175-.801 0-.62-.175-1.066-.532-1.378-.357-.269-.845-.4-1.422-.4H2.712v3.418h2.882v.006h-.002Zm8.573-.043c.358.356.889.533 1.598.533.487 0 .932-.133 1.29-.358.356-.269.575-.533.662-.8h2.175c-.358 1.064-.89 1.821-1.598 2.31-.707.444-1.553.707-2.575.707a5.17 5.17 0 0 1-1.908-.356 3.534 3.534 0 0 1-1.421-.977 3.564 3.564 0 0 1-.89-1.465c-.22-.576-.313-1.196-.313-1.91 0-.664.088-1.29.313-1.866a4.835 4.835 0 0 1 .933-1.51c.4-.4.889-.757 1.421-.977a5.023 5.023 0 0 1 1.867-.356c.757 0 1.421.131 1.997.444.575.312 1.021.665 1.378 1.197.356.488.62 1.064.801 1.685.088.62.131 1.245.088 1.954h-6.438c0 .725.262 1.387.62 1.745Zm2.8-4.665c-.313-.313-.802-.489-1.379-.489-.4 0-.707.088-.976.22-.269.131-.445.313-.62.488a1.196 1.196 0 0 0-.313.621c-.044.219-.087.4-.087.575h3.995c-.088-.658-.313-1.102-.621-1.415h.001Zm-3.909-4.66h4.973v1.196h-4.973V4.595Z" fill="#404040" />
+                        </svg> </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/js/translate.js"></script>
+    <script src="/js/menu-mobile.js"></script>
+    <script src="/js/plugins/simple-anime.js"></script>
+    <script src="/js/activate.js"></script>
+    <script src="/js/scrollAnimation.js"></script>
+    <script src="/js/smoothScroll.js"></script>
+</body>
+
+</html>
