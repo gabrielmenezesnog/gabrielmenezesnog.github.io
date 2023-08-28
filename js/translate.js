@@ -105,7 +105,7 @@ if (
     }
     if (
       item.outerHTML ===
-      `<p class="s-text medium grey-71">My name is Gabriel de Menezes Nogueira, I'm 22 years old, I'm from Colombo - Parnaná and I'm studying the 2nd period of the Systems Analysis and Development course at IFPR (Federal Institute of Paraná). I've been studying programming since I was 17, either on my own or at college. In my free time, I study creating projects and watching courses.</p>`
+      `<p class="s-text medium grey-71">My name is Gabriel de Menezes Nogueira, I'm 22 years old, I'm from Colombo - Paraná and I'm studying the 2nd period of the Systems Analysis and Development course at IFPR (Federal Institute of Paraná). I've been studying programming since I was 17, either on my own or at college. In my free time, I study creating projects and watching courses.</p>`
     ) {
       item.outerHTML = `<p class="s-text medium grey-71">Meu nome é Gabriel de Menezes Nogueira, tenho 22 anos, sou de Colombo - Parnaná e estou cursando o 2° período do curso Análise e Desenvolvimento de Sistemas no IFPR (Instituto Federal do Paraná). Estudo sobre programação desde os 17 anos, seja por conta própria ou faculdade. No tempo livre, estudo criando projetos e vendo cursos.</p>`;
     }
@@ -183,8 +183,7 @@ if (
     recentAcademicXp.outerHTML ===
     `<p class="recentXp m-text medium grey-71">My most recent academic experience was the completion of high school 🎓 integrated into the Technical Computer course. In addition, I am studying higher in <span class="white bold">Technology in Systems Analysis and Development</span>.</p>`
   ) {
-    recentAcademicXp.outerHTML =
-      `<p class="recentXp m-text medium grey-71">Minha primeira experiência acadêmica relevante foi terminar o ensino médio integrado com um curso de Técnico em Informática. Ademais, estou cursando superior em <span class="white bold">Technologia em Análise e Desenvolvimento de Sistemas</span>.</p>`;
+    recentAcademicXp.outerHTML = `<p class="recentXp m-text medium grey-71">Minha primeira experiência acadêmica relevante foi terminar o ensino médio integrado com um curso de Técnico em Informática. Ademais, estou cursando superior em <span class="white bold">Technologia em Análise e Desenvolvimento de Sistemas</span>.</p>`;
   }
 
   academic.forEach((item) => {
