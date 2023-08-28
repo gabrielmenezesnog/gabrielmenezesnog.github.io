@@ -105,10 +105,9 @@ if (
     }
     if (
       item.outerHTML ===
-      `<p class="s-text medium grey-71">My name is Gabriel de Menezes Nogueira, I'm 22 years old and I'm in the 2nd period of the Systems Analysis and Development course at IFPR (Federal Institute of Paraná). I've been studying programming since I was 17, either on my own or at college. Today, my focus is to develop with love, always based on the instructions of the most experienced and in an agile and efficient way!</p>`
+      `<p class="s-text medium grey-71">My name is Gabriel de Menezes Nogueira, I'm 22 years old, I'm from Colombo - Parnaná and I'm studying the 2nd period of the Systems Analysis and Development course at IFPR (Federal Institute of Paraná). I've been studying programming since I was 17, either on my own or at college. In my free time, I study creating projects and watching courses.</p>`
     ) {
-      item.outerHTML = `<p class="s-text medium grey-71">Meu nome é Gabriel de Menezes Nogueira, tenho 22 anos e estou curando o 2° período do curso Análise e Desenvolvimento de Sistemas no IFPR (Instituto Federal do Paraná).
-      Estudo sobre programação desde os 17 anos, seja por conta própria ou faculdade. Hoje, meu foco é desenvolver com amor, sempre me baseando nas instruções dos mais experientes e de maneira ágil e eficiente!</p>`;
+      item.outerHTML = `<p class="s-text medium grey-71">Meu nome é Gabriel de Menezes Nogueira, tenho 22 anos, sou de Colombo - Parnaná e estou cursando o 2° período do curso Análise e Desenvolvimento de Sistemas no IFPR (Instituto Federal do Paraná). Estudo sobre programação desde os 17 anos, seja por conta própria ou faculdade. No tempo livre, estudo criando projetos e vendo cursos.</p>`;
     }
   });
 
@@ -123,7 +122,7 @@ if (
       item.outerHTML ===
       `<p class="s-text grey-71">I worked in the <span class="yellow bold">home office</span> modality with a team of 5 people developing the UniAstus application. My work was all focused on <span class="yellow bold">React-native</span>: I created the application design using <span class="yellow bold">Figma</span>, I did all the screens, navigations, interactions, <span class="yellow bold">redux and sagas</span>. Here I also learned concepts of agile methodologies, using <span class="yellow bold">Jira and Kanban</span>.</p>`
     ) {
-      item.outerHTML = `<p class="s-text grey-71">Trabalhei na modalidade <span class="yellow bold">home office</span> em uma equipe de 5 pessoas desenvolvendo o aplicativo UniAstus. Meu trabalho foi totalmente focado em <span class="yellow bold">React-native</span>: criei o UI Design da aplicação utilizando o <span class="yellow bold">Figma</span>. Criei todas as telas, naveações, interações, <span class="yellow bold">redux e sagas</span>. Também aprendi e participei da utilização de metodoligias ágeis, usando <span class="yellow bold">Jirae Kanban</span>.</p>`;
+      item.outerHTML = `<p class="s-text grey-71">Trabalhei na modalidade <span class="yellow bold">home office</span> em uma equipe de 5 pessoas desenvolvendo o aplicativo UniAstus. Meu trabalho foi totalmente focado em <span class="yellow bold">React-native</span>: criei o UI Design da aplicação utilizando o <span class="yellow bold">Figma</span>. Criei todas as telas, naveações, interações, <span class="yellow bold">redux e sagas</span>. Também aprendi e participei da utilização de metodoligias ágeis, usando <span class="yellow bold">Jira e Kanban</span>.</p>`;
     }
 
     if (item.innerHTML === "Next job") {
