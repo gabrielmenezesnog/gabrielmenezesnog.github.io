@@ -15,7 +15,8 @@
 }
 
 .introduction h2 + h3::before {
-  content: url(/resources/svg/location.svg);
+  content: url(../../resources/svg/location.svg);
+  line-height: 0;
 }
 
 .introduction h1 {
@@ -28,12 +29,19 @@
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
 
+@media (max-width: 600px) {
+  .introduction {
+    margin-top: 100px;
+  }
+}
+
 @media (max-width: 360px) {
   .buttons {
-    gap: 16px;
+    gap: 12px;
   }
 }

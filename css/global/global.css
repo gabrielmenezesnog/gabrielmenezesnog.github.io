@@ -10,7 +10,57 @@ a {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  -webkit-text-size-adjust: 100%;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 10;
+  padding: 10px 16px;
+  background: var(--yellow);
+  color: var(--black-00);
+  font: 700 0.875rem/1.25rem "Poppins", sans-serif;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+.icon {
+  display: block;
+  background: var(--grey-40);
+  -webkit-mask: var(--icon) center / contain no-repeat;
+  mask: var(--icon) center / contain no-repeat;
+  transition: 0.2s;
+}
+
+.icon:hover,
+.icon:focus-visible {
+  background: var(--yellow);
+}
+
+.icon-side-email { --icon: url(../../resources/svg/side-email.svg); }
+.icon-side-linkedin { --icon: url(../../resources/svg/side-linkedin.svg); }
+.icon-side-github { --icon: url(../../resources/svg/side-github.svg); }
+.icon-side-whatsapp { --icon: url(../../resources/svg/side-whatsapp.svg); }
+.icon-email { --icon: url(../../resources/svg/footer-email.svg); }
+.icon-linkedin { --icon: url(../../resources/svg/footer-linkedin.svg); }
+.icon-github { --icon: url(../../resources/svg/footer-github.svg); }
+.icon-whatsapp { --icon: url(../../resources/svg/footer-whatsapp.svg); }
 
 main,
 section {
@@ -100,6 +150,23 @@ body {
   color: var(--white);
 }
 
+.text-button {
+  padding: 12px 8px;
+  font: 700 1rem/1.5rem "Poppins", sans-serif;
+  color: var(--white);
+  text-transform: uppercase;
+  transition: 0.1s;
+}
+
+.text-button::after {
+  content: " \2192";
+  color: var(--yellow);
+}
+
+.text-button:hover {
+  color: var(--yellow);
+}
+
 .secondary-button {
   padding: 12px 24px;
   outline: 2px solid;
@@ -114,11 +181,24 @@ body {
 @media (max-width: 360px) {
   .main-button {
     padding: 10px 20px;
-    font: 0.75rem/1.125rem "Poppins", sans-serif;
+    font: 700 0.75rem/1.125rem "Poppins", sans-serif;
   }
 
   .secondary-button {
     padding: 10px 20px;
     font: 700 0.75rem/1.125rem "Poppins", sans-serif;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
   }
 }

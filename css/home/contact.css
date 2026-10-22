@@ -19,24 +19,20 @@
   background: var(--grey-40);
 }
 
-.contact li svg {
-  padding: 12px 8px;
+.contact .icon {
+  width: 16px;
+  height: 16px;
+  margin: 12px 8px;
   position: relative;
   left: 0px;
-  transition: 0.2s;
 }
 
-.contact li svg:hover path {
-  fill: var(--yellow);
-}
-
-.contact li svg:hover {
-  position: relative;
+.contact .icon:hover {
   left: 8px;
 }
 
 @media (max-width: 1320px) {
-  .contact{
+  .contact {
     display: none;
   }
 }

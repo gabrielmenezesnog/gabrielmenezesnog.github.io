@@ -1,108 +1,91 @@
 header {
   position: fixed;
-  z-index: 1;
+  z-index: 5;
 }
 
 .header-bg {
-  height: 80px;
+  height: var(--header-height);
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
 .header {
   box-sizing: border-box;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
 
-.header-menu {
-  display: flex;
-  gap: 20px;
+.logo {
+  display: block;
+  line-height: 0;
 }
 
-.header-menu li {
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 8px;
+}
+
+.header-menu a {
+  display: block;
   box-sizing: border-box;
   padding: 10px 20px;
   transition: 0.1s;
 }
 
-.header-menu li:hover {
-  background: #ffbb00;
-  color: #332200;
+.header-menu a:hover,
+.header-menu a.current {
+  background: var(--yellow);
+  color: var(--dark-yellow);
 }
 
+.only-mobile,
 #mobile-menu {
   display: none;
-  overflow: hidden;
 }
 
-.header-menu a:first-child,
-.header-menu a:last-child {
-  display: none;
+.lang-toggle {
+  padding: 6px 10px;
+  background: transparent;
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.lang-toggle:hover {
+  background: var(--yellow);
+  color: var(--dark-yellow);
 }
 
 @media (max-width: 800px) {
-  .header-menu a:first-child,
-  .header-menu a:last-child {
+  .only-mobile {
     display: block;
   }
 
-  .logo {
-    box-sizing: border-box;
-    padding: 8px;
-  }
-
-  #mobile-menu {
-    display: block;
-  }
-
-  #menu {
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    place-items: center;
-    position: absolute;
-    visibility: hidden;
-    overflow: hidden;
-    width: 100vw;
-    height: 0vh;
-    top: 80px;
-    right: 0px;
-    transition: 0.3s;
-    padding-top: 5vh;
-  }
-
-  #nav.active #menu {
-    visibility: visible;
-    height: calc(100vh - 80px);
-    overflow: hidden;
-  }
-
-  .header-menu a li {
-    padding: 1rem;
-    width: 240px;
-    text-align: center;
-    color: var(--white);
-    border: 1px solid var(--yellow);
-    background: rgba(0, 0, 0, 0.6);
-  }
-
-  .header-menu a li:hover {
-    background: var(--yellow);
+  .header-actions {
+    gap: 4px;
   }
 
   #mobile-menu {
     background-color: transparent;
     border: none;
     display: flex;
+    align-items: center;
     padding: 0.5rem 1rem;
     cursor: pointer;
     gap: 0.5rem;
-    overflow: hidden;
   }
 
   #hamburger {
@@ -136,5 +119,44 @@ header {
     transform: rotate(-135deg);
     top: -6px;
     margin-bottom: 1px;
+  }
+
+  #menu {
+    background: rgba(0, 0, 0, 0.98);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: calc(100vh - var(--header-height));
+    height: calc(100dvh - var(--header-height));
+    padding-top: 5vh;
+    visibility: hidden;
+    opacity: 0;
+    overflow-y: auto;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+
+  #nav.active #menu {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header-menu a {
+    padding: 1rem;
+    width: 240px;
+    text-align: center;
+    color: var(--white);
+    border: 1px solid var(--yellow);
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .header-menu a:hover,
+  .header-menu a.current {
+    background: var(--yellow);
+    color: var(--dark-yellow);
   }
 }

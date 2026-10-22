@@ -1,21 +1,24 @@
 function initScrollAnimation() {
   const sections = document.querySelectorAll(".js-scroll");
-  const windowStarPoint = window.innerHeight * 0.6;
+  if (!sections.length) return;
 
-  if (sections.length) {
-    function animateScroll() {
-      sections.forEach((item) => {
-        const sectionTop = item.getBoundingClientRect().top - windowStarPoint;
-        if (sectionTop < 0) {
-          item.classList.add("activate");
-        }
-      });
-    }
-
-    animateScroll();
-
-    window.addEventListener("scroll", animateScroll);
+  if (!("IntersectionObserver" in window)) {
+    sections.forEach((item) => item.classList.add("activate"));
+    return;
   }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("activate");
+        observer.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "0px 0px -15% 0px" }
+  );
+
+  sections.forEach((item) => observer.observe(item));
 }
 
 initScrollAnimation();

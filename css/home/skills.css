@@ -7,47 +7,73 @@
 
 .skillbox h3 {
   margin-bottom: 16px;
+  text-transform: lowercase;
 }
 
-.skillbox li {
+.skillbox > li {
   padding: 20px;
   filter: drop-shadow(0px 5px 14px rgba(0, 0, 0, 0.2));
 }
 
-.frontend {
+.frontend,
+.backend {
   background: var(--yellow);
   color: var(--dark-yellow);
   position: relative;
 }
 
-.tools,
-.backend {
+.cloud,
+.ai,
+.testing,
+.tools {
   background: var(--black-11);
 }
 
-.tools p {
-  color: var(--black-00) !important;
-}
-
-.frontend h3 {
+.frontend h3,
+.backend h3 {
   display: flex;
   align-items: center;
   gap: 12px;
   position: relative;
 }
 
-.frontend h3::before {
+.frontend h3::before,
+.backend h3::before {
   content: "";
   width: 40px;
   height: 2px;
   background: var(--dark-yellow);
 }
 
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chips li {
+  padding: 6px 12px;
+  background: var(--grey-2e);
+  color: var(--grey-cc);
+}
+
+.frontend .chips li,
+.backend .chips li {
+  background: var(--dark-yellow);
+  color: var(--yellow);
+}
+
+@media (max-width: 990px) {
+  .skillbox {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
 @media (max-width: 700px) {
   .skillbox {
     margin-top: 80px;
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 24px;
   }
 }

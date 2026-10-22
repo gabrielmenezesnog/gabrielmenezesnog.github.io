@@ -1,15 +1,20 @@
 .about {
   margin-top: 120px;
   display: grid;
-  grid-template-columns: 4fr 8fr;
-  gap: 160px;
+  grid-template-columns: 310px 1fr;
+  gap: 80px;
   align-items: center;
   margin-bottom: 120px;
 }
 
 .about img {
-  width: 395px;
+  width: 100%;
+  max-width: 310px;
   height: auto;
+  aspect-ratio: 310 / 330;
+  object-fit: cover;
+  justify-self: start;
+  box-shadow: 12px 12px 0 var(--yellow);
 }
 
 .about-text h1 {
@@ -18,35 +23,27 @@
 
 .about-text p {
   margin-bottom: 12px;
+  max-width: 65ch;
 }
 
 @media (max-width: 990px) {
   .about {
     margin-top: 80px;
-    display: grid;
-    gap: 40px;
-    align-items: center;
-    margin-bottom: 120px;
-    justify-items: center;
-  }
-
-  .about img {
-    width: 240px;
-    height: auto;
+    grid-template-columns: 240px 1fr;
+    gap: 48px;
+    margin-bottom: 80px;
   }
 }
 
 @media (max-width: 700px) {
   .about {
     grid-template-columns: 1fr;
-  }
-
-  .about-text p {
-    max-width: 60ch;
+    justify-items: center;
   }
 
   .about img {
-    width: 240px;
-    height: auto;
+    justify-self: center;
+    max-width: 240px;
+    box-shadow: 8px 8px 0 var(--yellow);
   }
 }

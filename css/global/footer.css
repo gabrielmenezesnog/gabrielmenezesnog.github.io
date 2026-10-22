@@ -1,68 +1,73 @@
 .footer-bg {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100svh - var(--header-height));
   background: var(--black-00);
-  padding: 60px;
+  padding: 80px 0;
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  text-align: center;
 }
 
-.footer-text p:last-child {
-  margin-top: 60px;
-  margin-bottom: 0px;
+.footer .retangle h3 {
+  text-transform: uppercase;
 }
 
-.footer-text p:first-child {
+.footer-title {
+  max-width: 20ch;
+}
+
+.footer-text {
   max-width: 40ch;
+}
+
+.footer .buttons {
+  justify-content: center;
+  margin-top: 8px;
 }
 
 .contact-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
-  visibility: hidden;
+  margin-top: 16px;
 }
 
-.contact-list li svg {
-  padding: 8px;
-  position: relative;
-  left: 0px;
-  transition: 0.2s;
+.contact-list .icon {
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  padding: 12px;
+  background-color: var(--grey-9c);
+  background-clip: content-box;
+  -webkit-mask-origin: content-box;
+  mask-origin: content-box;
 }
 
-.contact-list li svg:hover path {
-  fill: var(--yellow);
+.contact-list .icon:hover,
+.contact-list .icon:focus-visible {
+  background-color: var(--yellow);
 }
 
-@media (max-width: 1320px) {
-  .contact-list {
-    visibility: visible;
-  }
+.footer-credit {
+  margin-top: 40px;
 }
 
 @media (max-width: 800px) {
   .footer-bg {
-    padding: 60px 0px;
+    padding: 60px 0;
   }
 
-  .footer {
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 1fr;
-    justify-items: center;
-    gap: 40px;
-  }
-
-  .footer-text {
-    grid-row: 2;
-  }
-
-  .contact-list {
-    grid-row: 1;
-  }
-
-  .footer-text p {
-    text-align: center;
+  .footer-title {
+    font: 600 1.5rem/2.25rem "Poppins", sans-serif;
   }
 }
