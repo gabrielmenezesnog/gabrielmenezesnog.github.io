@@ -47,3 +47,8 @@
     box-shadow: 8px 8px 0 var(--yellow);
   }
 }
+
+.about-text strong {
+  font-weight: 700;
+  color: var(--black-11);
+}
